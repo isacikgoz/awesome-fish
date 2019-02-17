@@ -33,7 +33,7 @@ Want to contribute? Fork this repository, add your project and send us a PR. If 
 - [matchai/**spacefish**](https://github.com/matchai/spacefish) - Space-themed prompt for astronauts
 - [oh-my-fish/**theme-bobthefish**](https://github.com/oh-my-fish/theme-bobthefish) - Robust, git-aware, powerline prompt
 - [rafaelrinaldi/**pure**](https://github.com/rafaelrinaldi/pure) - Pure-fish port of [sindresorhus/pure](https://github.com/sindresorhus/pure) prompt
-- [isacikgoz/**sashimi**](https://github.com/isacikgoz/sashimi) - Minimalist fish prompt that made with raw fish.
+- [isacikgoz/**sashimi**](https://github.com/isacikgoz/sashimi) - Minimalist fish prompt that made with raw fish
 
 ## Utilities
 
