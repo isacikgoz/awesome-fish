@@ -1,91 +1,71 @@
-# Awesome Fish
+# Awesome `fish` (the friendly interactive shell) [![Version](https://img.shields.io/github/tag/fish-shell/fish-shell.svg?label=&color=0366d6)](https://github.com/fish-shell/fish-shell/releases/latest)
 
-A curated list of packages, prompts, and resources for the amazing <a href="https://fishshell.com" title="friendly interactive shell">fish shell</a>. This work is donated to the public domain under the [CC0 Public Domain Dedication](https://creativecommons.org/publicdomain/zero/1.0/).
+A curated list of the most fabulous packages, prompts, and resources for the <a href="https://github.com/fish-shell/fish-shell" title="fish">friendly interactive shell</a>.
 
-Want to contribute? Fork this repository, add your project and send us a PR. If you see a project here that is not maintained or is not a good fit, [help us improve this file](https://github.com/jorgebucaran/awesome-fish/fork).
+Want to add your project here? Fork this repo, make your changes and [open a pull request](https://github.com/jorgebucaran/awesome-fish/fork). Is anything wrong, unclear, or missing? Help us improve this page—thank you!
 
-## Table of Contents
+Looking to get started with fish? [Try it in your browser](https://rootnroll.com/d/fish-shell).
 
-- [Package Management](#package-management)
-- [Prompts](#prompts)
-- [Utilities](#utilities)
-  - [Environment](#environment)
-  - [Key Bindings](#key-bindings)
-  - [Node.js](#nodejs)
-  - [Testing](#testing)
-- [Resources](#resources)
-  - [Articles](#articles)
-  - [Community](#community)
-  - [Learning](#learning)
+## What's in the menu?
 
-## Package Management
+### Package managers
 
-- [Fisher](https://github.com/jorgebucaran/fisher) - Zero configuration universal package manager
-- [Fundle](https://github.com/danhper/fundle) - Configuration-based package loader—for Vundle.vim fans
-- [Oh My Fish](https://github.com/oh-my-fish/oh-my-fish) - Oh My Zsh meets fish~!
+- [Fisher](https://github.com/jorgebucaran/fisher) - Minimal, fast and reliable package manager.
+- [Fundle](https://github.com/danhper/fundle) - <samp>config.fish</samp>-based package manager inspired by vundle.
+- [Oh My Fish!](https://github.com/oh-my-fish/oh-my-fish) - Shell configuration framework and package manager all-in-one.
 
-> ✋ [Need help choosing?](https://github.com/jorgebucaran/fisher/issues/481)
+### Shell prompts
 
-## Prompts
+- [Pure](https://github.com/rafaelrinaldi/pure) - Port of [sindresorhus/pure](https://github.com/sindresorhus/pure) prompt.
+- [Mono](https://github.com/fishpkg/fish-prompt-mono) - No bells or whistles, minimal shell prompt.
+- [Metro](https://github.com/fishpkg/fish-prompt-metro) - Git-aware, space-conscious, powerline prompt.
+- [Bobthefish](https://github.com/oh-my-fish/theme-bobthefish) - Robust, git-aware, powerline prompt.
+- [isacikgoz/**sashimi**](https://github.com/isacikgoz/sashimi) - Minimalist fish prompt that made with raw fish.
 
-- [fishpkg/**fish-prompt-metro**](https://github.com/fishpkg/fish-prompt-metro) - git-aware, space-conscious, powerline prompt
-- [hauleth/**agnoster**](https://github.com/hauleth/agnoster) - Solarized, git-aware, powerline prompt
-- [matchai/**spacefish**](https://github.com/matchai/spacefish) - Space-themed prompt for astronauts
-- [oh-my-fish/**theme-bobthefish**](https://github.com/oh-my-fish/theme-bobthefish) - Robust, git-aware, powerline prompt
-- [rafaelrinaldi/**pure**](https://github.com/rafaelrinaldi/pure) - Pure-fish port of [sindresorhus/pure](https://github.com/sindresorhus/pure) prompt
-- [isacikgoz/**sashimi**](https://github.com/isacikgoz/sashimi) - Minimalist fish prompt that made with raw fish
+### Commands, utilities, functions
 
-## Utilities
+- [enhancd](https://github.com/b4b4r07/enhancd) - A next-generation cd command with your interactive filter
+- [z](https://github.com/jethrokuan/z) - Pure-fish [rupa/z](https://github.com/rupa/z)-like directory jumping.
+- [fzf](https://github.com/jethrokuan/fzf) - Improved key bindings for [junegunn/fzf](https://github.com/junegunn/fzf).
+- [bax](https://github.com/jorgebucaran/fish-bax) - Run bash scripts, replaying environment changes in fish (see also [bass](https://github.com/edc/bass)).
+- [done](https://github.com/franciscolourenco/done) - Automatically receive notifications when a long process finishes.
+- [mock](https://github.com/matchai/fish-mock) - Quick and powerful function mocks.
+- [spark](https://github.com/jorgebucaran/fish-spark) - Pure-fish sparkline generator: ▁▂▃▅▂▇ in your shell.
+- [gitnow](https://github.com/joseluisq/gitnow) - A collection of utility functions set to speed up your git workflow.
+- [pisces](https://github.com/laughedelic/pisces) - Autoclose parentheses, braces, quotes and other paired symbols in the command-line.
+- [getopts](https://github.com/jorgebucaran/fish-getopts) - CLI options parser; alternative to the [argparse](https://fishshell.com/docs/current/commands.html#argparse) fish builtin.
+- [git-util](https://github.com/fishpkg/fish-git-util) - Git utility functions to query the status of a repository.
+- [fishtape](https://github.com/jorgebucaran/fishtape) - TAP-based test runner for fish scripts.
+- [ssh-agent](https://github.com/danhper/fish-ssh-agent) - Utility functions to start your ssh agent.
+- [bang-bang](https://github.com/oh-my-fish/plugin-bang-bang) - Bash-like history substitution.
+- [virtualfish](https://github.com/adambrenecki/virtualfish) - Virtualenv wrapper.
+- [apple-touchbar](https://github.com/rodrigobdz/fish-apple-touchbar) - Customize your [Touch Bar](https://developer.apple.com/design/human-interface-guidelines/macos/touch-bar/touch-bar-overview) in iTerm2.
+- [acomagu/fish-async-prompt](https://github.com/acomagu/fish-async-prompt) - Make your prompt asynchronous to increase it reactivity. 
+- [jorgebucaran/nvm](https://github.com/jorgebucaran/fish-nvm) - Pure-fish Node.js version manager.
+- [fabioantunes/nvm](https://github.com/FabioAntunes/fish-nvm) - nvm wrapper with completions (see also [brigand/fast-nvm](https://github.com/brigand/fast-nvm-fish)).
+- [jbonjean/re-search](https://github.com/jbonjean/re-search) - More readline (or bash) like incremental history search.
 
-- [franciscolourenco/**done**](https://github.com/franciscolourenco/done) - Automatically receive notifications when a long process finish
-- [jethrokuan/**z**](https://github.com/jethrokuan/z) - Pure-fish [rupa/z](https://github.com/rupa/z)-like directory jumping
-- [jorgebucaran/**fish-getopts**](https://github.com/jorgebucaran/fish-getopts) - CLI options parser alternative to the [`argparse`](https://fishshell.com/docs/current/commands.html#argparse) builtin
-- [jorgebucaran/**fish-spark**](https://github.com/jorgebucaran/fish-spark) - Pure-fish sparkline generator
-- [rodrigobdz/**fish-apple-touchbar**](https://github.com/rodrigobdz/fish-apple-touchbar) - Customize your Touch Bar in iTerm2
+### Articles, tutorials, guides
 
-### Environment
+- [The fish cookbook](https://github.com/jorgebucaran/fish-cookbook) (by [@jorgebucaran](https://github.com/jorgebucaran))
+- [The fish shell is awesome](https://jvns.ca/blog/2017/04/23/the-fish-shell-is-awesome/) (by [@jvns](https://github.com/jvns))
+- [Why you should give fish a chance](https://dev.to/jukben/why-you-should-give-a-chance-to-fish-shell-5a0l) (by [@jukben](https://github.com/jukben))
+- [A user introduction to the fish shell](https://flaviocopes.com/fish-shell/) (by [@flaviocopes](https://github.com/flaviocopes))
+- [Came for the colors, stayed for the sane scripting!](https://mvolkmann.github.io/fish-article/) (by [@mvolkmann](https://github.com/mvolkmann))
+- [Why I Switched from ZSH to FISH](https://dev.to/joshmedeski/why-i-switched-from-zsh-to-fish-2j17) (by [@joshmedeski](https://github.com/joshmedeski)) 
 
-- [danhper/**fish-ssh-agent**](https://github.com/danhper/fish-ssh-agent) - Utility functions to start your ssh agent
-- [edc/**bass**](https://github.com/edc/bass) - Make bash utilities usable in fish
+### Docker
 
-### Key Bindings
+- [dideler/fish-shell](https://hub.docker.com/r/dideler/fish-shell) - Ubuntu LTS with fish installed as the default shell
 
-- [jethrokuan/**fzf**](https://github.com/jethrokuan/fzf) - Improved key bindings for [junegunn/fzf](https://github.com/junegunn/fzf)
-- [laughedelic/**pisces**](https://github.com/laughedelic/pisces) - Autoclose parentheses, braces, quotes and other paired symbols
-- [oh-my-fish/**plugin-bang-bang**](https://github.com/oh-my-fish/plugin-bang-bang) - bash style history substitution
-
-### Node.js
-
-- [brigand/**fast-nvm-fish**](https://github.com/brigand/fast-nvm-fish) - Enhanced [nvm](https://github.com/creationix/nvm) wrapper optimized for speed
-- [FabioAntunes/**fish-nvm**](https://github.com/FabioAntunes/fish-nvm) - Completion-rich, true [nvm](https://github.com/creationix/nvm) wrapper
-- [jorgebucaran/**fish-nvm**](https://github.com/jorgebucaran/fish-nvm) - Pure-fish, no nonsense Node.js version manager
-
-### Testing
-
-- [jorgebucaran/**fishtape**](https://github.com/jorgebucaran/fishtape) - TAP-based test runner 
-- [matchai/**fish-mock**](https://github.com/matchai/fish-mock) - Quick and powerful mocks
-
-## Resources
-
-### Articles
-
-- [The fish shell is awesome](https://jvns.ca/blog/2017/04/23/the-fish-shell-is-awesome/) by Julia Evans
-- [A user introduction to the fish shell](https://flaviocopes.com/fish-shell) by Flavio Copes
-- [Come for the colors and autosuggestions, stay for the sane scripting!](https://mvolkmann.github.io/fish-article) by Mark Volkmann
-
-### Community
+## Stay in the loop
 
 - [r/fishshell](https://www.reddit.com/r/fishshell)
 - [Gitter Channel](https://gitter.im/fish-shell/fish-shell)
-- [Trending on GitHub](https://github.com/trending/shell)
 - [StackOverflow `#fish`](https://stackoverflow.com/questions/tagged/fish)
 
-### Learning
+<sup>[Back to top](#awesome-fish-) or [keep](https://github.com/topics/fish-shell) [exploring](https://github.com/topics/fish-packages) [on](https://github.com/topics/fish) [GitHub](https://github.com/topics/fish-prompt)</sup>
 
-- [Try in Browser!](https://rootnroll.com/d/fish-shell)
-- [The Fish Cookbook](https://github.com/jorgebucaran/fish-cookbook)
-- [Official Documentation](https://fishshell.com/docs/current/index.html)
+<h2></h2>
 
----
-
-👋 Looking for more? [Explore](https://github.com/topics/fish-shell) [these](https://github.com/topics/fish-packages) [topics](https://github.com/topics/fisher) [on](https://github.com/topics/oh-my-fish) [GitHub](https://github.com/topics/fish-prompt)
+[![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
