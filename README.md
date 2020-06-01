@@ -20,7 +20,7 @@ Looking to get started with fish? [Try it in your browser](https://rootnroll.com
 - [Mono](https://github.com/fishpkg/fish-prompt-mono) - No bells or whistles, minimal shell prompt.
 - [Metro](https://github.com/fishpkg/fish-prompt-metro) - Git-aware, space-conscious, powerline prompt.
 - [Bobthefish](https://github.com/oh-my-fish/theme-bobthefish) - Robust, git-aware, powerline prompt.
-- [isacikgoz/**sashimi**](https://github.com/isacikgoz/sashimi) - Minimalist fish prompt that made with raw fish.
+- [Sashimi](https://github.com/isacikgoz/sashimi) - A minimalist fish prompt made with raw fish.
 
 ### Commands, utilities, functions
 
